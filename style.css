@@ -1,0 +1,92 @@
+/* The full background on the screen */
+body {
+    background-color: #d9d9d9;
+}
+
+/* Title Icon */
+.header-icon {
+    text-align: center;
+    font-weight: bold; /* Will take this out when adding in png icon */
+}
+
+/* Holds Link Icons */
+.link-header {
+    text-align: center;
+}
+
+/* The computer background */
+/* TODO: add the computer art background later */
+.computer-background {
+    width: 1200px; 
+    height: 600px;
+    background-color: #c79adb;
+    margin: 50px auto; /* Sets the computer background in the middle */
+    border-radius: 20px; /* Rounds the corners */
+    box-shadow: 0 0 20px #2d2d2d; /* Creates drop shadow */
+}
+
+/* Computer header that holds the tabs */
+.browser-header {
+    width: 1200px;
+    height: 40px;
+    display: flex; /* Turns into a flex container */
+    align-items: center; /* Items inside will be in the center of the container */
+    position: relative; /* Allows positioning for items inside to be move around */
+    border-top-left-radius: 20px; /* Only round the top corners */
+    border-top-right-radius: 20px;
+    background-color: #804e95;
+}
+
+/* Page Tabs */
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+/* Each tab */
+.tab {
+    color: #ffffff;
+    padding: 8px 18px;
+    border: 1px solid #623177; 
+    border-bottom: none; /* Removes the bottom of the border */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+    position: relative;
+    top: -1px;
+}
+
+.tab:hover {
+    background-color: #9762ae;
+}
+
+/* Circle icons on left side of computer page */
+.browser-icons {
+    display: flex;
+    gap: 10px; /* Gap between the circles */
+    padding: 0 20px; /* Adds padding to the sides */
+}
+
+/* Each colored circle */
+.browser-icons span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer; /* TODO: might get rid of this */
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.browser-icons .close {
+    background: #ff5f56;
+}
+
+.browser-icons .minimize {
+    background: #f3ca57;
+}
+
+.browser-icons .maximize {
+    background: #38de46;
+}
